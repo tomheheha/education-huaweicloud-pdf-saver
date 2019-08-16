@@ -1,0 +1,25 @@
+{
+  "name": "华为云学院 学习文档(pdf)自动保存插件",
+  "version": "0.1",
+  "description": "启用插件后，浏览华为云学院课程，自动保存学习文档(pdf)。",
+  "permissions": [
+    "downloads",
+    "webRequest",
+    //此处抱歉 -- 由于文档文件保存于华为云obs服务，域名不固定，因此插件需要所有域名的webRequest权限。
+    //请设置插件权限为"当您点击此扩展程序时"
+    "*://*/"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "manifest_version": 2
+}
